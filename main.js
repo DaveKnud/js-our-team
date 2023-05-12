@@ -6,7 +6,7 @@
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //MILESTONE 2:
 //Stampare le stesse informazioni su DOM sottoforma di stringhe
-DATI:
+//DATI:
 //Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
 //Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
 //Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
@@ -15,7 +15,8 @@ DATI:
 //Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 
 
-//Container 
+//MILESTONE 0:
+//Creare l’array di oggetti con le informazioni fornite.
 const elContainer = document.getElementById("container");
 console.log(elContainer);
 
@@ -56,6 +57,14 @@ const membriStaff =
         "name" : "Barbara Ramos",
         "position" : "	Graphic Designer",
         "imageURL" : "barbara-ramos-graphic-designer.jpg"
-    }
+    },
+];
+console.log(membriStaff);
 
-]
+//MILESTONE 1:
+//Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+for (let i = 0; i < membriStaff.length; i++){
+    let membrIesimo = membriStaff [i];
+    console.log(membrIesimo);
+}
